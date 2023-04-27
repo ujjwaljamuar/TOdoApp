@@ -3,18 +3,18 @@ import mongoose from "mongoose";
 const todoSchema = new mongoose.Schema({
     data: {
         type: String,
-        required: true
+        required: true,
     },
     done: {
         type: Boolean,
-        default: false
+        default: false,
     },
     createdTime: {
         type: Date,
-        default: Date.now()
-    }
-})
+        default: Date.now(),
+    },
+});
 
-const todo = mongoose.model('todo', todoSchema);
+const Todo = mongoose.model("todo", todoSchema);
 
-export default todo;
+export default Todo;
