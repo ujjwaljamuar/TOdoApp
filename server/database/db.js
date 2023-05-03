@@ -22,7 +22,7 @@ const Connection = () => {
 
     mongoose.connection.on("error", () => {
         console.log(
-            "error while connecting with the database, ",
+            "error while connecting with the database",
             error.message
         );
     });

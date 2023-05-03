@@ -2,7 +2,7 @@
     background-color: #34495e;
     padding: 15px;
     margin: 5px;
-    list-style: none;
+    overflow-x: hidden;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -14,5 +14,14 @@ span {
 .icon{
     float: right;
     margin-right: 20px;
+}
+
+.edit-todo{
+    width: 85%;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: #34495e;
+    color: white;
 
 }

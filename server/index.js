@@ -17,6 +17,10 @@ const PORT = 8080;
 
 Connection();
 
+app.get('/', (req, res)=> {
+  res.json('Server is running successfully');
+});
+
 app.listen(PORT, () =>
   console.log(`server is running successfully on PORT: ${PORT}`)
 );
